@@ -1,0 +1,19 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="dark">
+    <ion-title>
+      Boton de panico
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="center">
+  <div class="fondo">
+    <ion-button *ngFor="let alarma of alarmas" (click)="reproducir(alarma)" class="main_button" color="danger" shape="round">
+      <div class="sec_button">
+        {{ alarma.nombre }}
+      </div>
+    </ion-button>
+  </div>
+  
+</ion-content>
+

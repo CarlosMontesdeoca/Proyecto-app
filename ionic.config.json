@@ -1,5 +1,7 @@
 {
   "name": "Proyecto-DAW",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

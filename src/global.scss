@@ -20,7 +20,35 @@
 
 /* Optional CSS utils that can be commented out */
 @import "~@ionic/angular/css/padding.css";
-@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/float-elements.css";               
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+                        
+.center {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.max {
+    width: 180px;
+    height: 180px;
+}
+.main_button {
+    text-align: center;
+    font-size: xx-large;
+    border-radius: 100px;
+    width: 200px;
+    height: 200px;
+    margin: 50px;
+}
+.sec_button {
+    border: rgb(255, 255, 255) 5px solid;
+    border-radius: 100%;
+    width: 140px;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
