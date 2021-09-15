@@ -1,9 +1,32 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>info</ion-title>
+<ion-header [translucent]="true">
+  <ion-toolbar  color="dark">
+    <div class="nav">
+      <div><ion-title>Informacion</ion-title></div>
+      <div>
+      <ion-tab-button (click)="goToHome()">
+        <ion-icon name="return-down-forward-outline" class="color"></ion-icon>
+      </ion-tab-button></div>
+    </div>  
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-
+<ion-content [fullscreen]="true" class="center">
+  <div class="fondo">
+    <br>
+    <h2>¿Qué es Boton de panico?</h2>
+    <p>Con esta sencilla aplicación podrás tener una alarma en tu teléfono en caso de estar en peligro de un asalto, tan simple como apretar un botón y subir el volumen de tu dispositivo al máximo para poder alertar a pobladores cercanos a ti.</p>
+    <br>
+    <h2>Proximamente</h2>
+    <p>Entre ellas se espera activar una función de geolocalización que puede ser compartida a contactos de tu importancia, la activación de la alarma sin necesidad de desbloquear el teléfono y mas.</p>
+    <br>
+    <h2>Desarrollador</h2>
+    <img src="../../assets/media/dev.jpg" >
+    <p>Carlos Montesdeoca</p>
+    <p>23 años</p>
+    <p>Quito Ecuador</p>
+    <p>Soy un estudiante en tecnología de la Escuela Politécnica Nacional del Ecuador en el área de desarrollo de software, la aplicación entregada es una primera versión de mi tema de titulación.</p>
+    <br>
+    <p>Tema aprobado por la secretaria de la ESFOT</p>
+    <p>Tutor de tesis: Ingeniero Juan Pablo Zaldumbide</p>
+  </div>
 </ion-content>

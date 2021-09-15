@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { ALARMAS } from 'src/data/data.alarma';
 import { Alarma } from 'src/interfaces/alarma.interface';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-home',
@@ -11,7 +12,9 @@ export class HomePage {
 
   alarmas: Alarma[] = []
 
-  constructor() {
+  constructor(
+    private navCtrl: NavController
+  ) {
     this.alarmas = ALARMAS.slice(0);
   }
 
@@ -28,5 +31,9 @@ export class HomePage {
     setTimeout(() => {
       alarma.reproduciendo = false;
     }, alarma.duracion * 1000);
+  }
+
+  goToInfo() {
+    this.navCtrl.navigateForward( '/info' );
   }
 }

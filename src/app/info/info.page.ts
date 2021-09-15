@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { NavController } from '@ionic/angular';
+
 
 @Component({
   selector: 'app-info',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InfoPage implements OnInit {
 
-  constructor() { }
+  constructor(
+    private navCtrl: NavController
+  ) { }
 
   ngOnInit() {
+  }
+
+  goToHome() {
+    this.navCtrl.navigateForward( '/home' );
   }
 
 }
